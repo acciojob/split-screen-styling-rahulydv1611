@@ -1,52 +1,51 @@
-/*  your css code here. If applicable */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body {
+    margin: 0;
 }
 
+/* Main layout */
 .container {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+    display: flex;
+    height: 100vh;
 }
 
-/* 1. Navbar: 1/6th width */
-.navbar {
-  width: calc(100vw / 6);
-  background-color: #D7E8D4;
-  padding: 1em;
+/* Left Nav */
+.nav {
+    width: 16.66%; /* 1/6 */
+    background-color: #D7E8D4;
+    padding: 1em;
 }
 
-/* 2. Main Content: Remaining 5/6th width */
-.main-content {
-  display: flex;
-  flex-direction: column;
-  width: calc(500vw / 6);
+/* Right side */
+.main {
+    width: 83.33%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* 3. Header & Footer: 1/5th height */
-.header, .footer {
-  height: 20vh; /* 1/5th of viewport height */
-  background-color: yellowgreen;
-  padding: 1em;
+/* Header & Footer */
+.header,
+.footer {
+    background-color: yellowgreen;
+    height: 20vh; /* 1/5 of viewport height */
+    padding: 1em;
 }
 
-/* 4. Middle Content Section */
-.content-body {
-  display: flex;
-  flex: 1; /* Takes remaining vertical space */
+/* Content section */
+.content {
+    display: flex;
+    flex: 1;
 }
 
-/* 5. Article: 3/4th width of content section */
+/* Article */
 .article {
-  width: 75%; 
-  min-height: 60vh;
-  padding: 1em;
+    width: 75%; /* 3/4 */
+    min-height: 60vh;
+    padding: 1em;
 }
 
-/* 6. Aside: 1/4th width of content section */
+/* Aside */
 .aside {
-  width: 25%;
-  padding: 1em;
+    width: 25%; /* 1/4 */
+    background-color: #e6e3cc;
+    padding: 1em;
 }
