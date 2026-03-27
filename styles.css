@@ -49,3 +49,19 @@ body {
     background-color: #e6e3cc;
     padding: 1em;
 }
+.content {
+    display: flex;
+}
+
+/* ✅ Article */
+.content > article {
+    flex: 3 1 0%;   /* 🔥 REQUIRED */
+    min-height: 60vh;
+    padding: 1em;
+}
+
+/* ✅ Aside */
+.content > aside {
+    flex: 1 1 0%;   /* 🔥 REQUIRED */
+    padding: 1em;
+}
